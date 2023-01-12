@@ -2,13 +2,24 @@ const user = {
     nome: 'pedro',
     email: 'p@p.com',
     nascimento: '2023/01/01',
-    role: 'admim',
+    role: 'estudante',
     ativo: true,
     exibirInfo: function(){
         console.log(this.nome, this.email)
 
     }
 }
-user.exibirInfo()
-const exibir =  user.exibirInfo
-exibir()
+
+const admim = {
+    nome: 'paulo',
+    email: 'paulo@p.com',
+    role: 'admim',
+    criarCurso(){
+        console.log('curso criado')
+    }
+}
+
+Object.setPrototypeOf(admim, user)
+
+admim.criarCurso()
+admim.exibirInfo()
