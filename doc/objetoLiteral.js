@@ -21,5 +21,3 @@ const admim = {
 
 Object.setPrototypeOf(admim, user)
 
-admim.criarCurso()
-admim.exibirInfo()

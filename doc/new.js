@@ -31,8 +31,3 @@ const user = {
         return this.nome, this.email, this.telefone;
     }
 }
-
-const novoUser = Object.create(user)
-novoUser.init('bigp', 'bigp@p.com', '2341234143')
-console.log(novoUser.exebirInfo())
-// console.log(user.isPrototypeOf(novoUser))
